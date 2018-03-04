@@ -68,3 +68,50 @@ for (var i=0; i<totals.length; i++) {
     };
 };
 document.getElementById('challenge1').innerHTML += '<p>' + output + '</p>';
+
+// Challenge 2
+// loop over list of winners
+// total for each country in the list
+
+
+var winnerList = [
+    {season: '1999-2000', team: 'Real Madrid', country: 'Spain'},
+    {season: '2000-2001', team: 'Bayern Munich', country: 'Germany'},
+    {season: '2001-2002', team: 'Real Madrid', country: 'Spain'},
+    {season: '2002-2003', team: 'Milan', country: 'Italy'},
+    {season: '2003-2004', team: 'Porto', country: 'Portugal'},
+    {season: '2004-2005', team: 'Liverpool', country: 'England'},
+    {season: '2005-2006', team: 'Barcelona', country: 'Spain'},
+    {season: '2006-2007', team: 'Milan', country: 'Italy'},
+    {season: '2007-2008', team: 'Manchester United', country: 'England'},
+    {season: '2008-2009', team: 'Barcelona', country: 'Spain'},
+    {season: '2009-2010', team: 'Internazionale', country: 'Italy'},
+    {season: '2010-2011', team: 'Barcelona', country: 'Spain'},
+    {season: '2011-2012', team: 'Chelsea', country: 'England'},
+    {season: '2012-2013', team: 'Bayern Munich', country: 'Germany'},
+    {season: '2013-2014', team: 'Real Madrid', country: 'Spain'},
+    {season: '2014-2015', team: 'Barcelona', country: 'Spain'},
+    {season: '2015-2016', team: 'Real Madrid', country: 'Spain'},
+    {season: '2016-2017', team: 'Real Madrid', country: 'Spain'},
+  ];
+
+
+var countryNames = [];
+for (var i=0; i<winnerList.length; i++) {
+    countryNames.push(winnerList[i].country);
+};
+
+var country = { };
+for (var i = 0, j = countryNames.length; i < j; i++) {
+    // if (countryNames.indexOf(countryNames[i]) >= 0) {
+    country[countryNames[i]] = (country[countryNames[i]] || 0) + 1;
+    // } else {
+    //     document.getElementById('challenge2').innerHTML += 0;
+    // }
+};
+var winningDiv = document.getElementById('challenge2');
+var countryList = '<p>' + country['Spain'] + '</p>';
+countryList += '<p>' + country['Portugal'] + '</p>';
+// countryList += '<p>' + country['Russia'] + '</p>';
+winningDiv.innerHTML += countryList;
+
