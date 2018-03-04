@@ -115,3 +115,65 @@ countryList += '<p>' + country['Portugal'] + '</p>';
 // countryList += '<p>' + country['Russia'] + '</p>';
 winningDiv.innerHTML += countryList;
 
+// Challenge 3
+
+var test1 = {
+    a: 5,
+    b: 2,
+    operator: "add"
+};
+
+var result;
+if (test1.operator === "add") {
+    result = test1.a + test1.b;
+} else if (test1.operator === 'subtract') {
+    result = test1.a - test1.b;
+} else if (test1.operator === 'multiply') {
+    result = test1.a * test1.b;
+} else if (test1.operator === 'divide') {
+    result = test1.a / test1.b;
+};
+
+document.getElementById('challenge3').innerHTML += '<p>' + result + '</p>';
+
+var test1 = {a: 5, b:2, operator: "subtract"};
+var result;
+if (test1.operator === "add") {
+    result = test1.a + test1.b;
+} else if (test1.operator === 'subtract') {
+    result = test1.a - test1.b;
+} else if (test1.operator === 'multiply') {
+    result = test1.a * test1.b;
+} else if (test1.operator === 'divide') {
+    result = test1.a / test1.b;
+};
+
+document.getElementById('challenge3').innerHTML += '<p>' + result + '</p>';
+
+var test1 = {a: 5, b:2, operator: "multiply"};
+var result;
+if (test1.operator === "add") {
+    result = test1.a + test1.b;
+} else if (test1.operator === 'subtract') {
+    result = test1.a - test1.b;
+} else if (test1.operator === 'multiply') {
+    result = test1.a * test1.b;
+} else if (test1.operator === 'divide') {
+    result = test1.a / test1.b;
+};
+
+document.getElementById('challenge3').innerHTML += '<p>' + result + '</p>';
+
+var test1 = {a: 5, b:2, operator: "divide"};
+var result;
+if (test1.operator === "add") {
+    result = test1.a + test1.b;
+} else if (test1.operator === 'subtract') {
+    result = test1.a - test1.b;
+} else if (test1.operator === 'multiply') {
+    result = test1.a * test1.b;
+} else if (test1.operator === 'divide') {
+    result = test1.a / test1.b;
+};
+
+document.getElementById('challenge3').innerHTML += '<p>' + result + '</p>';
