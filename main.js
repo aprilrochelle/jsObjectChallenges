@@ -177,3 +177,37 @@ if (test1.operator === "add") {
 };
 
 document.getElementById('challenge3').innerHTML += '<p>' + result + '</p>';
+
+
+// Challenge 5
+
+var candidate1 = {
+    minSalary: 120000
+  };
+  let job1 = {
+    maxSalary: 140000
+  }
+
+  var output;
+  if (candidate1.minSalary <= (job1.maxSalary - 14000)) {
+    output = true;
+  } else {
+      output = false;
+  };
+  var acceptDiv = document.getElementById('challenge5');
+  acceptDiv.innerHTML += '<p>' + output + '</p>';
+
+
+  var candidate1 = {
+    minSalary: 950000
+  };
+  let job2 = {
+    maxSalary: 100000
+  };
+  if (candidate1.minSalary <= (job2.maxSalary - 10000)) {
+    output = true;
+  } else {
+      output = false;
+  };
+  var acceptDiv = document.getElementById('challenge5');
+  acceptDiv.innerHTML += '<p>' + output + '</p>';
