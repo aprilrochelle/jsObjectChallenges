@@ -178,6 +178,24 @@ if (test1.operator === "add") {
 
 document.getElementById('challenge3').innerHTML += '<p>' + result + '</p>';
 
+// Challenge 4
+
+var names = ['fred', 'barney'];
+var ages = [30, 40];
+var nameNAge;
+
+function zipObject(arr1, arr2) {
+    for (var i = 0; i < arr2.length; i++) {
+        nameNAge = {};
+        for(var j = 0; j < arr1.length; j++) {
+            nameNAge[arr1[j]] = arr2[j];
+        };
+    };
+    return nameNAge;
+};
+var output = JSON.stringify(zipObject(names, ages));
+document.getElementById('challenge4').innerHTML += '<p>' + output + '</p>';
+
 
 // Challenge 5
 
